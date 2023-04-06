@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Button _playBtn;
     [SerializeField] private Button _replayBtn;
+    [SerializeField] private Button _rforceReplayBtn;
     [SerializeField] private GameObject _startPanel;
     [SerializeField] private GameObject _losePanel;
     [SerializeField] private GameObject _uiPanel;
@@ -27,6 +28,7 @@ public class GameController : MonoBehaviour
         _losePanel.SetActive(false);
         _playBtn.onClick.AddListener(StartGame);
         _replayBtn.onClick.AddListener(RestartGame);
+        _rforceReplayBtn.onClick.AddListener(RestartGame);
     }
 
 

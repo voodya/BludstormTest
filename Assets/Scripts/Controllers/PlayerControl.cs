@@ -34,6 +34,7 @@ public class PlayerControl : BaseUnit
 
     public void ForseUpdate()
     {
+        StopAllCoroutines();
         _hpBar.fillAmount = 1;
         StartCoroutine(UpdateEnemys());
     }
